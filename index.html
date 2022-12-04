@@ -29,29 +29,20 @@
               placeholder="Nombre de la tarea"
               class="inputForm"
               autocomplete="off"
+              data-form-input
             />
-            <button type="submit" class="btnCreate">
+            <input type="datetime-local" data-form-date placeholder="YYYY/MM/DD"/>
+            <button type="submit" class="btnCreate" data-form-btn>
               Agregar <i class="fas fa-plus-circle"></i>
             </button>
           </form>
         </div>
-        <ul class="cardsList">
-          <li class="card">
-            <div>
-              <i class="far fa-check-square icon"></i>
-              <span class="task">Hacer curso de DOM</span>
-            </div>
-            <i class="fas fa-trash-alt trashIcon icon"></i>
-          </li>
-          <li class="card">
-            <div>
-              <i class="far fa-check-square icon"></i>
-              <span class="task">Hacer curso de Git</span>
-            </div>
-            <i class="fas fa-trash-alt trashIcon icon"></i>
-          </li>
+        <ul class="cardsList" data-list>
         </ul>
       </div>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>

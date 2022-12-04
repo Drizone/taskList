@@ -46,7 +46,7 @@ form {
   padding: 10px;
   border: 1px solid #eee;
   outline: none;
-  width: 65%;
+  width: 35%;
 }
 
 .inputForm::placeholder {
@@ -124,4 +124,42 @@ form {
 
 .noTasks {
   font-size: 48px;
+}
+
+.date {
+  width:100% ;
+  padding: 15px;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .mainCard {
+    width: 90%;
+    height: 90%;
+  }
+
+
+  .btnCreate {
+    width: 50%;
+    padding: 10px 15px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  form {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputForm{
+    width: 90%;
+  }
+
+  input {
+    width: 90%;
+  }
 }
